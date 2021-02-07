@@ -5,6 +5,13 @@
             "Autor" : "Endersson Mendoza",
             "Contenido" : "Tengo que ir a ayudar a Oswalito con la tarea de C#",
             "Prioridad" : "Altísima"
+            
+        },
+        {
+            "titulo" : "Crear una base de datos en SQL - Server",
+            "Autor" : "Oswald",
+            "Contenido" : "Crear la base de datos en SQL - Server",
+            "Prioridad" : "Megalta"
         },
 
         {

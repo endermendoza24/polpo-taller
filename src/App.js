@@ -1,7 +1,7 @@
 import './App.css';
 import React, {Component} from 'react';
-import Navigation from './componentes/navigation';
 import {todos} from './todos.json';
+import TodoForm from './componentes/TodoForm';
 
 
 const fecha = () =>{
@@ -19,14 +19,31 @@ class App extends Component{
   this.state = {
     todos
   }
+  this.handleAddTodo = this.handleAddTodo.bind(this);
 }
+
+removeTodo(index){
+  this.setState({
+    todos : this.state.todos.filter((e, i)=>{
+      return i !== index;
+    })
+  });
+}
+
+handleAddTodo(todo){
+  this.setState({
+    todos : [...this.state.todos, todo]
+  })
+}
+
+
 
 
 render(){
   const todos = this.state.todos.map((todos,i) =>{
     return(
       
-      <div className="col-md-4">
+      <div className="col-md-4" key={i}>
         <div className="card mt-4">
        <div className="card-header">
        <h3>{todos.titulo}</h3>
@@ -44,10 +61,10 @@ render(){
            <p><strong>{todos.Autor}</strong></p>
          </div>
 
-         <div>
-           {
-             fecha() 
-           }
+         <div className="card-footer">
+           <button className="btn btn-danger" onClick={this.removeTodo.bind(this, i)}>
+             Borrar
+           </button>
          </div>
 
 
@@ -74,6 +91,7 @@ render(){
 
     <div className="container">
       <div className="row mt-4">
+      <TodoForm onAddTodo={this.handleAddTodo}></TodoForm>
       {todos}
       </div>
     </div>
@@ -83,3 +101,4 @@ render(){
 }
 
 export default App;
+  
