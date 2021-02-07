@@ -1,0 +1,38 @@
+{
+    "todos": [
+        {
+            "titulo" : "Ayudar a Oswald",
+            "Autor" : "Endersson Mendoza",
+            "Contenido" : "Tengo que ir a ayudar a Oswalito con la tarea de C#",
+            "Prioridad" : "Altísima"
+        },
+
+        {
+            "titulo" : "Aprender react",
+            "Autor" : "Endersson",
+            "Contenido" : "Consolidar más los conocimientos sobre react",
+            "Prioridad" : "Alta"
+        },
+
+        {
+            "titulo" : "Aprender una base de datos NoSQL",
+            "Autor" : "Endersson",
+            "Contenido" : "Aprender aunque sea un poco de MongoDB",
+            "Prioridad" : "Baja"
+        },
+
+        {
+            "titulo" : "Aprender sobre la creación de APIS",
+            "Autor" : "Endersson",
+            "Contenido" : "Saber hacer una API con Loopback, para conectar mi backend con el frontend",
+            "Prioridad" : "Media"
+        },
+        {
+            "titulo" : "Chocobananos",
+            "Autor" : "Endersson",
+            "Contenido" : "Comprar las cosas para hacer chocobananos",
+            "Prioridad" : "Baja"
+        }
+
+    ]
+}
